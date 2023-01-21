@@ -27,3 +27,8 @@ jobs:
       run: |
         npm install
         yarn build
+    
+    - name: Test
+      working-directory: ./client
+      run: |
+        yarn test
